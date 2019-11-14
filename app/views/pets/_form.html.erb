@@ -1,0 +1,12 @@
+<h1><%= @pet.id ? 'Edit pet' : 'Create pet' %></h1>
+<hr />
+<%= form_for [@sub, @pet] do |f| %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <br />
+
+  <%= f.label :discription %>
+  <%= f.text_area :body, required: true %>
+  <%= f.submit %>
+<% end %>

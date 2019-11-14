@@ -1,0 +1,8 @@
+<h1><%= @sub.name %></h1>
+<hr />
+<p>What Would You Like To Do?</p>
+<%= link_to 'View The Pets', sub_pets_path(@sub) %>
+<br />
+<%= link_to 'Edit This Place', edit_sub_path(@sub) %>
+<br />
+<%= link_to 'Remove A Place From Our Map', @sub, method: :delete %>

@@ -1,0 +1,7 @@
+<h1>Click An Area To Go Into</h1>
+<%= link_to 'Create an area to go to', new_sub_path %>
+<ul>
+  <% @subs.each do |sub| %>
+    <li><%= link_to sub.name, sub %></li>
+  <% end %>
+</ul>

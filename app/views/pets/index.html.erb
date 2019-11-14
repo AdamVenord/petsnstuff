@@ -1,0 +1,7 @@
+<h1>Click a Pet To View Content</h1>
+<%= link_to 'Create a new pet', new_sub_pet_path(@sub) %>
+<ul>
+  <% @pets.each do |pet| %>
+    <li><%= link_to pet.name, [@sub, pet] %></li>
+  <% end %>
+</ul>
